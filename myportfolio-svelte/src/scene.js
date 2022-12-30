@@ -81,12 +81,7 @@ const animate = () => {
     sphere.rotation.z = .5 * elapsedTime;
     particleMesh.rotation.y = -.1 * elapsedTime;
 
-    if(mouseX > 0) {
-        particleMesh.rotation.y = mouseY * (elapsedTime * 0.00007);
-        particleMesh.rotation.x = mouseX * (elapsedTime * 0.00007);
-    }
-
-    if(mouseX < 0) {
+    if(mouseX > 0 || mouseX < 0) {
         particleMesh.rotation.y = mouseY * (elapsedTime * 0.00007);
         particleMesh.rotation.x = mouseX * (elapsedTime * 0.00007);
     }

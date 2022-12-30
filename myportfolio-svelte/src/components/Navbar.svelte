@@ -79,6 +79,7 @@
 
     .menu__item {
         border: 2px solid rgb(56, 63, 70);
+		margin-right: 4px;
     }
 
 	/*Header and Paragraph Styling*/
